@@ -37,6 +37,8 @@ public class Main {
 
             System.out.print("Lütfen bir sayı giriniz: ");
             int num = input.nextInt();
+
+            // fonksiyona ikinci bir değişken olarak 2 verilir ve 2'den num sayısına kadar bu değişken artırılır.
             if (isPrimeNum(num, 2)) {
                 System.out.println(num + " bir asal sayıdır.");
                 isExit = true;
