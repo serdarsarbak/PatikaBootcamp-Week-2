@@ -1,5 +1,4 @@
 public class Employee {
-
     String name;
     double salary;
     int workHours;
@@ -46,16 +45,7 @@ public class Employee {
     double newSalary () {
         return this.salary - tax() + bonus() + raiseSalary();
     }
-
-  void stringPrint () {
-      System.out.println("Name: " + this.name);
-      System.out.println("Salary: " + this.salary);
-      System.out.println("Working Hours: " + this.workHours);
-      System.out.println("Hire Year: " + this.hireYear);
-      System.out.println("Tax: " + tax());
-      System.out.println("Bonus: " + bonus());
-      System.out.println("Salary raise: " + raiseSalary());
-      System.out.println("Salary with tax and bonus: " + salaryWithTaxBonus());
-      System.out.println("New Salary: " + newSalary());
+    public String toString () {
+        return (("Name : " + this.name + "\nSalary : " + this.salary + "\nWorking Hours : " + this.workHours + "\nHire Year : " + this.hireYear + "\nTax : " + tax() + "\nBonus : " + bonus() + "\nSalary Increase : " + raiseSalary() + "\nSalary with Tax and Bonus : " + salaryWithTaxBonus() + "\nNew Salary : " + newSalary()));
   }
 }
